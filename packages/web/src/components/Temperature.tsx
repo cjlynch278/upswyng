@@ -4,6 +4,7 @@ import { Typography } from "@material-ui/core";
 import { font } from "../App.styles";
 import makeStyles from "@material-ui/styles/makeStyles";
 import useTemperature from "./useTemperature";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const Temperature = () => {
   const classes = useStyles();
+  const { t } = useTranslation(["temperature"]);
   const temp: undefined | null | number = useTemperature();
   if (!temp) {
     return null;
@@ -41,7 +43,7 @@ const Temperature = () => {
   return (
     <div className={classes.container}>
       <Typography variant="srOnly" component="h2">
-        Current Temperature
+        {t("currentTemperature")}
       </Typography>
       <div className={classes.temp}>
         <span className={classes.degrees}>{temp}&deg;</span>

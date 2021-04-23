@@ -10,6 +10,7 @@ import { TAlert } from "@upswyng/types";
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/styles/makeStyles";
+import { useTranslation } from "react-i18next";
 
 interface Props extends DrawerProps {
   alerts: TAlert[] | null;
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const AlertsDrawer = ({ alerts, toggleDrawer, ...drawerProps }: Props) => {
+  const { t } = useTranslation(["alerts"]);
   const classes = useStyles();
   return (
     <Drawer
@@ -50,7 +52,7 @@ const AlertsDrawer = ({ alerts, toggleDrawer, ...drawerProps }: Props) => {
           )}
           <Grid container justify="flex-end" item>
             <IconButton onClick={toggleDrawer}>
-              <Typography variant="srOnly">close alerts</Typography>
+              <Typography variant="srOnly">{t("closeAlerts")}</Typography>
               <CloseIcon />
             </IconButton>
           </Grid>
