@@ -195,8 +195,8 @@ export default {
     socialSecurity: "Seguro Social",
   },
   temperature: {
-     currentTemperature: "Temperatura Actual",
-  }, 
+    currentTemperature: "Temperatura Actual",
+  },
   alerts: {
     closeAlerts: "Cerrar Alertas",
   },
