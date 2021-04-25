@@ -1,6 +1,6 @@
 <h1><img src="./upswyng.svg" alt="UpSwyng" maxWidth="350px" /></h1>
 
-UpSwyng is a mobile-ready, digital directory of resources to assist the unhoused and at-risk communities. This is a [Code For Boulder](https://www.codeforboulder.org) project coming soon to Boulder County, Colorado.
+fdsafdsa is a mobile-ready, digital directory of resources to assist the unhoused and at-risk communities. This is a [Code For Boulder](https://www.codeforboulder.org) project coming soon to Boulder County, Colorado.
 
 ## Getting Started
 
